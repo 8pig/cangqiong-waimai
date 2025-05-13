@@ -73,7 +73,7 @@ public class EmployeeController {
         return Result.success();
     }
 
-    @PostMapping("/save")
+    @PostMapping()
     @ApiOperation("新增员工")
     public Result<Void> save(@RequestBody EmployeeDTO employeeDTO) {
         employeeService.save(employeeDTO);
